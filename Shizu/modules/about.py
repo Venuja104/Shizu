@@ -9,6 +9,6 @@ Powerful Abilities
 
 • Youtube Downloader 🎵
 
-Developer [TeamShizu🇱🇰](https://t.me/Mr_Rasiyaa)
+Developer [TeamAlphaZero 🇱🇰](https://t.me/TeamAlphaZero)
 """
 __mod_name__ = "About"
