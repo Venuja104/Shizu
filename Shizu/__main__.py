@@ -63,45 +63,44 @@ from Shizu.modules.helper_funcs.misc import paginate_modules
 from Shizu.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm Shizu💖
-I'm a Powerful group manager bot With Cool Modules. Made by [Rasiyaa 🇱🇰](t.me/KingKnight_RG)
-Hit /help to find my list of available commands
+*Hello there, I'm Alpha Zero ✨
+
+I'm a Powerful group manager bot With Cool Modules. Made by @TeamAlphaZero
+Hit /help to find my list of available commands*
  
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="📢Updates Channel", url="https://t.me/ShizuUpdates"),
+        InlineKeyboardButton(text="📢Updates Channel", url="https://t.me/AlphaZeroUpdates"),
         InlineKeyboardButton(
-            text="👥 Support Group", url="https://t.me/CozmoSupport_Official"
+            text="👥 Support Group", url="https://t.me/AlphaBotSupport_Official"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="📜Source", url="https://www.youtube.com/watch?v=fXXEcAkWAFU"
+            text="📜Source", url="https://github.com/Venuja104"
         ),
-        InlineKeyboardButton(text="❔ Help", url="http://t.me/TheCozmoBot?start=help"),
+        InlineKeyboardButton(text="❔ Help", url="http://t.me/TheAlphaZeroBot?start=help"),
     ],
     [
         InlineKeyboardButton(
-            text="➕ Add Shizu to your group ➕",
-            url="t.me/Shizu_herobot?startgroup=true",
+            text="➕ Add Alpha to your group ➕",
+            url="t.me/TheAlphaZeroBot?startgroup=true",
         ),
     ],
 ]
 
-SHIZU_IMG = "https://telegra.ph/file/89336a96eb696d94558ba.jpg"
+SHIZU_IMG = "https://telegra.ph/file/d7e54f6a85a01c2d54cbe.jpg"
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/922a73ff9aca155b23608.jpg)
+*Main Commands :*🤖
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
-
-      * POWERED BY *:- [ShizuUpdates](t.me/ShizuUpdates)
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
@@ -110,7 +109,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them💖  [Rasiya](t.me/Mr_Rasiyaa)"""
+Support them [Venuja Thilakarathna](https://t.me/Venuja_Sadew)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -371,8 +370,8 @@ def Shizu_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"* Hi There  The name's {dispatcher.bot.first_name} \n\nAs  You I'm a next generational group management bot developed by Shizu Updates.* "
-            f"\n\n Join [ShizuUpdates](https://t.me/ShizuUpdates) To Keep Yourself Updated About {dispatcher.bot.first_name}"
+            text=f"* Hi There  The name's {dispatcher.bot.first_name} \n\nAs  You I'm a next generational group management bot developed by @TeamAlphaZero.* "
+            f"\n\n Join [AlphaZeroUpdates](https://t.me/AlphaZeroUpdates) To Keep Yourself Updated About {dispatcher.bot.first_name}"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features"
             f"\n\nYou Can Know More About Me By Clicking The Below Buttons",
@@ -405,7 +404,7 @@ def Shizu_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [Shizu Support](https://t.me/ShizuSupport_Official).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [Alpha Zero Support](https://t.me/AlphaBotSupport_Official).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -424,8 +423,8 @@ def Shizu_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Shizu](https://t.me/Shizu_herobot)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by Rasiyaa"
+            f"\n\nBased on [Alpha Zero](https://t.me/TheAlphaZeroBot)."
+            f"\n\n{dispatcher.bot.first_name}'s source code was written by Venuja"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
