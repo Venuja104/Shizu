@@ -4,7 +4,7 @@
 </p>
 # 2 Branches available. this is main brach. swith advaced fr all fetures
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Venuja104/Shizu.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TeamInfinitybots/Shizu.git)
 
 
 ### Video Tutorial:
